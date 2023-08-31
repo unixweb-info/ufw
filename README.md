@@ -9,7 +9,7 @@ sudo bash install-ufw.sh <br>
 ### Собственно тут перевод комментариев к командам на Русский язык! 
 ### Обязательно работайте с правами root или sudo
 ### Установка ufw
-sudo apt update
+<code>sudo apt update</code>
 sudo apt install ufw -y
 ### Проверка того, включен ли IPv6
 sudo grep IPV6 /etc/default/ufw
