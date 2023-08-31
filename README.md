@@ -10,7 +10,7 @@ sudo bash install-ufw.sh <br>
 #
 ### Собственно тут перевод комментариев к командам на Русский язык! 
 ### Обязательно работайте с правами root или sudo
-### Установка ufw<br>
+### Установка ufw
 <code>
 sudo apt update<br>
 sudo apt install ufw -y<br>
