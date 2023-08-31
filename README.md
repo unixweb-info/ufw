@@ -12,7 +12,8 @@ sudo ufw default allow outgoing
 sudo ufw allow OpenSSH
 # Если вы не хотите открывать этот порт, вы можете задать комментарий к этому правилу или удалить его из скрипта.
 # Открытие портов 80,443 - эти порты необходимы для работы сайта
-sudo ufw allow 'Nginx Full'
+# sudo ufw allow 'Nginx Full' если у вас установлен пакет nginx
+sudo ufw allow 80,443/tcp
 # Открытие портов 21,65000:65500 - эти порты необходимы для работы по протоколу FTP. Не забудьте проверить диапазон портов, настроенный в ProFTPD, выполните эту команду в терминале Linux:
 # grep PassivePorts /etc/proftpd.conf
 sudo ufw allow 21,65000:65500/tcp
@@ -21,6 +22,9 @@ sudo ufw allow 25,110,143,465,587,993,995/tcp
 # 
 # Если вам нужно открыть порт 3306 mysql, удалите комментарий из правила, убрав знак сетки # в начале правила и заменив IP 192.168.1.1 своим IP-адресом. Не рекомендуется открывать этот порт для всех.
 sudo ufw allow proto tcp from 192.168.1.1 to any port 3306
-# Включаем UFW
+# Добавление UFW в автозагрузку
 sudo systemctl enabled ufw
+# Включаем UFW
 sudo ufw enable
+# Выводим статус установленных правил UFW
+sudo ufw status
