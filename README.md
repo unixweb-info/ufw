@@ -1,12 +1,10 @@
 ### Команды которые показаны на видео
-<code>
-sudo iptables -L -vn <br>
+<code>sudo iptables -L -vn <br>
 sudo apt update <br>
 sudo apt install wget nano -y <br>
 wget https://raw.githubusercontent.com/Unixweb-RU/ufw/main/install-ufw.sh <br>
 nano ./install-ufw.sh <br>
-sudo bash install-ufw.sh <br>
-</code>
+sudo bash install-ufw.sh</code>
 #
 ### Собственно тут перевод комментариев к командам на Русский язык! 
 ### Обязательно работайте с правами root или sudo
