@@ -1,6 +1,5 @@
 # Команды которые показаны на видео
-sudo iptables -L -vn
-#
+sudo iptables -L -vn <br>
 sudo apt update
 #
 sudo apt install wget nano -y
