@@ -22,7 +22,7 @@ sudo ufw allow 21,65000:65500/tcp
 sudo ufw allow 25,110,143,465,587,993,995/tcp
 # 
 # Если вам нужно открыть порт 3306 mysql, удалите комментарий из правила, убрав знак сетки # в начале правила и заменив IP 192.168.1.1 своим IP-адресом. Не рекомендуется открывать этот порт для всех.
-sudo ufw allow proto tcp from 192.168.1.1 to any port 3306
+# sudo ufw allow proto tcp from 192.168.1.1 to any port 3306
 # Добавление UFW в автозагрузку
 sudo systemctl enable ufw
 # Включаем UFW
