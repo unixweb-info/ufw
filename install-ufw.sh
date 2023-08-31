@@ -12,7 +12,8 @@ sudo ufw default allow outgoing
 sudo ufw allow OpenSSH
 # If you do not want to open this port, you can set a comment on this rule or remove it from the script.
 # Opening ports 80,443 - these ports are needed for the site to work
-sudo ufw allow 'Nginx Full'
+# sudo ufw allow 'Nginx Full' if you have the nginx package installed
+sudo ufw allow 80,443/tcp
 # Opening ports 21,65000:65500 - these ports are needed for FTP operation. Don't forget to check the port range that is configured in ProFTPD, Execute this command in the Linux terminal:
 # grep PassivePorts /etc/proftpd.conf
 sudo ufw allow 21,65000:65500/tcp
